@@ -1,0 +1,31 @@
+name: ct-build
+channels:
+- conda-forge
+dependencies:
+- python  # Cantera supports Python 3.7 and up
+- scons  # build system
+- boost-cpp  # C++ dependency
+# - sundials  # uncomment to override Cantera default
+# - fmt  # uncomment to override Cantera default
+# - eigen  # uncomment to override Cantera default
+# - yaml-cpp  # uncomment to override Cantera default
+# - libgomp  # optional (OpenMP implementation when using GCC)
+- cython  # needed to build Python package
+- numpy  # needed to build Python package
+- pytest  # needed for the Python test suite
+- ruamel.yaml  # needed for converter scripts
+# - h5py  # optional (needed for HDF/H5 output)
+# - pandas  # optional (needed for pandas interface)
+# - scipy  # optional (needed for some examples)
+# - matplotlib  # optional (needed for plots)
+# - python-graphviz  # optional (needed for reaction path diagrams)
+- ipython  # optional (needed for nicer interactive command line)
+# - jupyter  # optional (needed for Jupyter Notebook)
+# - sphinx  # optional (needed for documentation)
+# - doxygen  # optional (needed for documentation)
+# - graphviz  # optional (needed for documentation)
+# - pip  # optional (needed if PyPI managed packages are used)
+# - pip:  # optional (list of PyPI managed packages)
+#   - sphinxcontrib-matlabdomain  # optional (needed for documentation)
+#   - sphinxcontrib-katex  # optional (needed for documentation)
+#   - sphinxcontrib-doxylink  # optional (needed for documentation)
