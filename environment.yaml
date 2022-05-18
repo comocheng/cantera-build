@@ -1,4 +1,4 @@
-name: ct-build
+name: cantera-dev
 channels:
 - conda-forge
 dependencies:
