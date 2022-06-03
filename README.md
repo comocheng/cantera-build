@@ -36,10 +36,11 @@ To configure and build, on a computer with 6 cores
 ```
 scons build -j6
 ```
-with the documentation
+and with the documentation
 ```
 scons build -j6 doxygen_docs=y sphinx_docs=y 
 ```
+Note that this will save the `doxygen_docs` and `sphinx_docs` settings in your `cantera.conf` file so all future scons builds will also have them, until you clear or edit that file.
 
 To test
 ```
@@ -65,3 +66,16 @@ To remove it, do
 ```
 conda develop -u build/python
 ```
+
+
+### MATLAB
+To build with MATLAB you must install MATLAB then 
+```
+scons build matlab_path="/Applications/MATLAB_R2022a.app"
+```
+Note that this will save the `matlab_path` settings in your `cantera.conf` file so all future Scons builds will also have it, until you clear or edit that file.
+After building you will need to install
+```
+scons install
+```
+
